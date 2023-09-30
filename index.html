@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <!   css    !> -->
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4dce5b9494.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo6.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Software <span class="typing">Developer</span> </p> -->
+                <h3 >Software <span class="auto-type"></span></h3>
+                <h1>Hi,I am<span> Sunny Bhushan</span>  <br>from Nawada District <br>(Bihar).</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about ------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" >
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>Here,I am Sunny Bhushan from Nawada District(Bihar).Currently I am pursuing Btech in Information Technology from Guru Ghasidas University(Bilaspur).
+                        I have good problem solving skills and ability to work better in a team.I have good skill in both Frontend and Backend in Web Development.Also I have a strong passion 
+                        for learning new Technologies and applying them to real-world problems.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>I can design both frontend and backend in web development.<br>
+                            Framework in which i am comfortable:- <b> HTML, CSS, Javascript, Reactjs, Expressjs, Nodejs, Mongodb. </b></li>
+                            <li><span>App Development</span><br>I have also knowledge about the app development.<br>
+                            Framework/Tools in which i am comfortable:- <b>Kotline language,Android Studio.</b></li>
+                            <li><span>Stock Market</span><br>I have also knowledge about the stock market.<br>
+                            How it works and How to manage stocks in portfolio.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>I had done internship in BoltIOT for two months in web development using reactjs where i created a web page in 
+                                which various resturant items are listed and i have to design a webpage to calculte total price of items which users select and buy from the resturant. 
+                                <br>Also I have some project to show my skills in web development. </li>
+                            <li><span>App Development</span><br>I had done app development project in my college project in which i created a miniature of our college website.</li>
+                            <li><span>Stock Market</span><br>I have two years of experience in stock market.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Undergraduate</span><br>Till now I am pursuing Btech in Information Technology from Guru Ghasidas University,Bilaspur(Chhattisgarh).</li>
+                            <li><span>Senior Secondary School</span><br>I had done my Senior Secondary School from Gyan Bharti Which is situated in Nawada district(Bihar).</li>
+                            <li><span>Secondary School</span><br>I had done my Secondary School from Gyan Bharti which is situated in Nawada district(Bihar).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    
+                    <p>I have strong command on web development, specializing in both front-end and back-end technologies(MERN Stack). Proficient in HTML, CSS, JavaScript and modern frameworks like Reactjs , Nodejs, Expressjs and also in MongodDB and google firebase. I can create responsive and engaging user interfaces. On the back-end, I excel in Nodejs and database management with MongoDB, delivering robust and efficient web applications. With a track record of optimizing performance and user experience, I'm dedicated to crafting exceptional online experiences.</p>
+
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Development</h2>
+                    
+                    <p>I have strong command in besic app development, focusing on Android platforms. Proficient in language like Kotlin, I can design and build user-friendly, feature-rich mobile applications. With expertise in UI/UX design, I can create engaging and visually appealing interfaces that prioritize user satisfaction. My commitment is to clean code and thorough testing ensures the reliability and performance of the apps that I develop.</p>
+
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Video Editing </h2>
+                    
+                    <p>I have strong command in video editing skills, combining creativity with technical expertise to craft compelling visual content. Proficient in normal software like Adobe Premiere Pro , I have a keen eye for storytelling, pacing, and visual aesthetics. Whether it's editing promotional videos or vlogs.I am dedicated to deliver high-quality, engaging content that resonates with audiences."</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web1.jpg" >
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>This Web app connects you to the talented people around the world.</p>
+                        <!-- to add font down the para we use a  -->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app11.jpg" >
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>This Mobile app connects you to the talented people around the world.</p>
+                        <!-- to add font down the para we use a  -->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web2222.jpg" >
+                    <div class="layer">
+                        <h3>Video Editing</h3>
+                        <p>I have strong command in video editing skills, combining creativity with technical expertise to craft compelling visual content.</p>
+                        <!-- to add font down the para we use a  -->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+              <!-- two columns 1st colum social media links 2nd colum  contact form  -->
+              <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sunnybhushan71@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>7665744063</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- if one btn it will be in center so to move in left direction second btn2 is used  -->
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="Name " placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+              </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Sunny.Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+    
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    // var tab-links= document.getElementsByClassName("tab-links");
+    function opentab(tabname){
+        // when ever we click on the links it will hide the unnecessary part 
+        for(tablink of tablinks){
+            // it will remove the active class name 
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            // it will remove the active class name 
+            tabcontent.classList.remove("active-tab");
+        }
+        // it will add the color 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu= document.getElementById("sidemenu");
+    // so when we click on menu fuction it will call openmenu function 
+    function openmenu(){
+       sidemeu.style.right = "0";
+    }
+    function closemenu(){
+       sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzt9Rw2mg3AGCAKpA2Yztj0hLSkHfkY9N3vjIAw0ziBOrBsNUeR54K6x3LbpN46bzSokA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            // here 5000mili second , after 5sec message will be removed
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" referrerpolicy="no-referrer"></script>
+<script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Developer.", "Engineer."],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
+
+</script>
+
+
+</body>
+</html>
